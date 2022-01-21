@@ -19,7 +19,14 @@ const AddUser = (props) => {
   const addUserHandler = (event) => {
     event.preventDefault();
     console.log('name and age', entereUserdName, enteredAge);
+    setEntereUserdName('');
+    setEnteredAge('');
   };
+
+  // const userData = {
+  //   username: entereUserdName,
+  //   userAge: enteredAge
+  // };
 
   return (
     <Card className={classes.input}>
