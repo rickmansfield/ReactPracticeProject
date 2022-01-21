@@ -5,13 +5,20 @@ import styles from '../UI/Button';
 import Button from '../UI/Button'
 
 const AddUser = (props) => {
-  const [enteredName, setEnteredName] = useState('');
-  const nameChangeHandler = (e) => {
-    setEnteredName(e.target.value)
+  const [entereUserdName, setEntereUserdName] = useState('');
+  const [enteredAge, setEnteredAge] = useState('');
+
+  const userNameChangeHandler = (e) => {
+    setEntereUserdName(e.target.value)
+  };
+
+  const ageChangeHandler = (e) => {
+    setEnteredAge(e.target.value)
   };
 
   const addUserHandler = (event) => {
     event.preventDefault();
+    console.log('name and age', entereUserdName, enteredAge);
   };
 
   return (
@@ -21,13 +28,15 @@ const AddUser = (props) => {
         <input
           id="username"
           type='text'
-          value={enteredName}
-          onChange={nameChangeHandler}
+          value={entereUserdName}
+          onChange={userNameChangeHandler}
         />
         <label htmlFor="age">Age</label>
         <input
           id='age'
           type="number"
+          value={enteredAge}
+          onChange={ageChangeHandler}
         />
         <Button className={styles.button} type='submit'>Add User</Button>
       </form >

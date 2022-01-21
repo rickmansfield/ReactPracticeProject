@@ -1,0 +1,2 @@
+# React Practice Project
+This is just a personal project to practice spinning up a react app and working with React Basics and components including custom "Card" and "Button" wrappers. This project helped me review legacy props drilling. 
