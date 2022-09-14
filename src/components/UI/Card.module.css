@@ -1,3 +1,4 @@
+/* // css modules create custom class names and prevent class name collisions.  */
 .card {
   background: white;
   box-shadow: 0 2px 8px rgb(0, 0, 0.26);
